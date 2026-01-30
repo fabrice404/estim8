@@ -1,0 +1,14 @@
+services:
+  server:
+    container_name: server
+    build: ./server
+    restart: unless-stopped
+    ports:
+      - "3001:3001"
+
+  client:
+    container_name: client
+    build: ./client
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
