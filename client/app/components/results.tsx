@@ -86,7 +86,7 @@ const Results = ({ game, roundReset }: { game: GameState, roundReset: () => void
           className="btn btn-primary rounded-md shadow-md py-2 px-4 transition duration-75 ease-in-out"
           type="button"
         >
-          Start new vote
+          Start new voting round
         </button>
       </div>
     </div>

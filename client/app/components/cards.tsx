@@ -113,7 +113,7 @@ const Cards = ({
           className="btn btn-primary rounded-md shadow-md py-2 px-4 transition duration-75 ease-in-out"
           type="button"
         >
-          End vote
+          End voting round
         </button>
       </div>
     </div>
