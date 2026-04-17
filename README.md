@@ -59,7 +59,7 @@ cd server
 npm install
 npm run dev
 
-# Client (runs on http://localhost:3000)
+# Client (runs on http://localhost:3002)
 cd client
 npm install
 npm run dev
@@ -73,8 +73,8 @@ docker compose up --build
 
 | Service | URL                     |
 | ------- | ----------------------- |
-| Client  | http://localhost:3002    |
 | Server  | ws://localhost:3001     |
+| Client  | http://localhost:3002   |
 
 ## Configuration
 
