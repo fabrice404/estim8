@@ -10,19 +10,19 @@ const Results = ({ game, roundReset }: { game: GameState, roundReset: () => void
   const colors = ['#ffc907', '#ec018c', '#2488c9', '#e03d26', '#2488c9', '#20abdb', '#2d3485'];
 
   const results: Result[] = game.players
+    .filter((p) => !!p.points)
     .reduce((acc: Result[], player: Player) => {
-      if (typeof player.points == 'number') {
-        let item = acc.find((i) => i.points === player.points);
-        if (!item) {
-          item = { points: player.points!, players: [] };
-          acc.push(item);
-        }
-        item.players.push(player.name);
+      let item = acc.find((i) => i.points === player.points);
+      if (!item) {
+        item = { points: player.points!, players: [] };
+        acc.push(item);
       }
+      item.players.push(player.name);
       return acc;
     }, []);
 
-  const donutData: BaseDataEntry[] = results.toSorted((a, b) => (a.points > b.points ? 1 : -1))
+  const donutData: BaseDataEntry[] = results
+    .toSorted((a, b) => (a.points > b.points ? 1 : -1))
     .map((res) => ({
       title: res.points,
       value: res.players.length,

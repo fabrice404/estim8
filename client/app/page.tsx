@@ -23,7 +23,6 @@ export default function Home() {
         console.log('WebSocket connection established.');
       };
       _ws.onmessage = (e) => {
-        console.log('Message from server ', e.data);
         setGame(JSON.parse(e.data));
       };
       setWs(_ws);
@@ -66,6 +65,13 @@ export default function Home() {
   };
 
   const roundEndVote = () => {
+    const totalPlayers = game.players.length;
+    const votes = game.players.filter((p) => !!p.points).length;
+    if (votes < totalPlayers) {
+      if (!window.confirm('Not all players have voted. Do you want to end the round anyway?')) {
+        return;
+      }
+    }
     sendMessage({
       type: 'END_ROUND',
     });
