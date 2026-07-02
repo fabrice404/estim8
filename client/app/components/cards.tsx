@@ -9,88 +9,88 @@ const Cards = ({
   }
 
   const cards = [
-    {
-      points: 'S',
-      subtitle: '< 2 weeks, 1 engineer',
-      style: {
-        neutral: 'border-green-400',
-        selected: 'bg-linear-to-t from-green-600 to-green-400 text-white',
-      }
-    },
-    {
-      points: 'M',
-      subtitle: '4-6 weeks, 1-2 engineers',
-      style: {
-        neutral: 'border-yellow-400',
-        selected: 'bg-linear-to-t from-yellow-600 to-yellow-400 text-white',
-      }
-    },
-    {
-      points: 'L',
-      subtitle: 'Full quarter, 2+ engineers',
-      style: {
-        neutral: 'border-orange-400',
-        selected: 'bg-linear-to-t from-orange-600 to-orange-400 text-white',
-      }
-    },
-    {
-      points: 'XL',
-      subtitle: 'Multi-quarter, 2+ engineers',
-      style: {
-        neutral: 'border-red-400',
-        selected: 'bg-linear-to-t from-red-600 to-red-400 text-white',
-      }
-    },
-    //   {
-    //   points: 0,
-    //   subtitle: 'Already done',
-    //   style: {
-    //     neutral: '',
-    //     selected: 'bg-linear-to-t from-indigo-600 to-indigo-400 text-white',
-    //   }
-    // }, {
-    //   points: 1,
-    //   subtitle: 'Trivial',
-    //   style: {
-    //     neutral: 'border-blue-400',
-    //     selected: 'bg-linear-to-t from-blue-600 to-blue-400 text-white',
-    //   }
-    // }, {
-    //   points: 2,
-    //   subtitle: 'Small change',
+    // {
+    //   points: 'S',
+    //   subtitle: '< 2 weeks, 1 engineer',
     //   style: {
     //     neutral: 'border-green-400',
     //     selected: 'bg-linear-to-t from-green-600 to-green-400 text-white',
     //   }
-    // }, {
-    //   points: 3,
-    //   subtitle: 'Normal change',
+    // },
+    // {
+    //   points: 'M',
+    //   subtitle: '4-6 weeks, 1-2 engineers',
     //   style: {
     //     neutral: 'border-yellow-400',
     //     selected: 'bg-linear-to-t from-yellow-600 to-yellow-400 text-white',
     //   }
-    // }, {
-    //   points: 5,
-    //   subtitle: 'Needs thinking',
+    // },
+    // {
+    //   points: 'L',
+    //   subtitle: 'Full quarter, 2+ engineers',
     //   style: {
     //     neutral: 'border-orange-400',
     //     selected: 'bg-linear-to-t from-orange-600 to-orange-400 text-white',
     //   }
-    // }, {
-    //   points: 8,
-    //   subtitle: 'Big change',
-    //   style: {
-    //     neutral: 'border-purple-400',
-    //     selected: 'bg-linear-to-t from-purple-600 to-purple-400 text-white',
-    //   }
-    // }, {
-    //   points: 13,
-    //   subtitle: 'Needs to be split',
+    // },
+    // {
+    //   points: 'XL',
+    //   subtitle: 'Multi-quarter, 2+ engineers',
     //   style: {
     //     neutral: 'border-red-400',
     //     selected: 'bg-linear-to-t from-red-600 to-red-400 text-white',
     //   }
     // },
+    {
+      points: 0,
+      subtitle: 'Already done',
+      style: {
+        neutral: '',
+        selected: 'bg-linear-to-t from-indigo-600 to-indigo-400 text-white',
+      }
+    }, {
+      points: 1,
+      subtitle: 'Trivial',
+      style: {
+        neutral: 'border-blue-400',
+        selected: 'bg-linear-to-t from-blue-600 to-blue-400 text-white',
+      }
+    }, {
+      points: 2,
+      subtitle: 'Small change',
+      style: {
+        neutral: 'border-green-400',
+        selected: 'bg-linear-to-t from-green-600 to-green-400 text-white',
+      }
+    }, {
+      points: 3,
+      subtitle: 'Normal change',
+      style: {
+        neutral: 'border-yellow-400',
+        selected: 'bg-linear-to-t from-yellow-600 to-yellow-400 text-white',
+      }
+    }, {
+      points: 5,
+      subtitle: 'Needs thinking',
+      style: {
+        neutral: 'border-orange-400',
+        selected: 'bg-linear-to-t from-orange-600 to-orange-400 text-white',
+      }
+    }, {
+      points: 8,
+      subtitle: 'Big change',
+      style: {
+        neutral: 'border-purple-400',
+        selected: 'bg-linear-to-t from-purple-600 to-purple-400 text-white',
+      }
+    }, {
+      points: 13,
+      subtitle: 'Needs to be split',
+      style: {
+        neutral: 'border-red-400',
+        selected: 'bg-linear-to-t from-red-600 to-red-400 text-white',
+      }
+    },
     {
       points: '∞',
       subtitle: 'Infinity and Beyond',
